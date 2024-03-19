@@ -1,9 +1,9 @@
-name: npm-unpublish
+name: npm-publish
 on:
   release:
     types: [created]
 jobs:
-  unpublish:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -19,6 +19,7 @@ jobs:
           cache-dependency-path: package-lock.json
           registry-url: 'https://registry.npmjs.org'
       - run: npm install
-      - run: npm unpublish yorkie-ui@0.2.1
+      - run: npm run style
+      - run: npm run build && npm publish --provenance
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
