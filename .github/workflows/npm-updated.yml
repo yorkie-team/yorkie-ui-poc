@@ -22,8 +22,7 @@ jobs:
       - run: npm install
       - run: npm run style
       - run: npm run build
-      - run: |
-          npm version 0.2.0
-          npm publish
+      - run: npm version patch
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
