@@ -1,4 +1,4 @@
-name: npm-publish
+name: npm-updated
 on:
   push:
     branches:
@@ -19,6 +19,10 @@ jobs:
           cache: 'npm'
           cache-dependency-path: package-lock.json
           registry-url: 'https://registry.npmjs.org'
+      - name: Set up Git
+        run: |
+          git config --global user.email "vi.tran@naver.com"
+          git config --global user.name "Alice Tran"
       - run: npm install
       - run: npm run style
       - run: npm run build
