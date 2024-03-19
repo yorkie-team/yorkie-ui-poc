@@ -21,7 +21,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - name: Set up Git
         run: |
-          git config --global user.email "vi.tran@naver.com"
+          git config --global user.email "vi.tran@navercorp.com"
           git config --global user.name "Alice Tran"
       - run: npm install
       - run: npm run style
