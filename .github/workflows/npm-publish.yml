@@ -23,7 +23,7 @@ jobs:
 
       - name: Publish to npm
         run: |
-          npm version v0.2.0
+          npm version 0.2.0
           npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
