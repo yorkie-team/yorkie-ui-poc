@@ -27,4 +27,3 @@ jobs:
           npm publish
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          PREVIOUS_VERSION: ${{ github.event.before }}
