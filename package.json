@@ -6,6 +6,19 @@
     "type": "git",
     "url": "git+https://github.com/yorkie-team/yorkie-ui.git"
   },
+  "homepage": "https://yorkie.dev/yorkie-ui",
+  "keywords": [
+    "design-system",
+    "components",
+    "ui-library",
+    "component",
+    "framework",
+    "theming",
+    "postcss",
+    "design",
+    "css",
+    "ui"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
