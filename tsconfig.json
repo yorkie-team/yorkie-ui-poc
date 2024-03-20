@@ -34,6 +34,7 @@
       "@/lib/*": ["./src/lib/*"]
     }
   },
-  "include": ["src", "./index.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "styled-system", ".storybook"],
+  "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
